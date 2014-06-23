@@ -1,0 +1,25 @@
+{
+  "name": "fis-pm",
+  "version": "0.0.4",
+  "description": "fis-pm",
+  "main": "fis-pm.js",
+  "dependencies": {
+    "commander" : "2.0.0",
+    "pm2-interface" : "0.1.3"
+  },
+  "bin": {
+    "fis-pm": "bin/fis-pm"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fis",
+    "fis-pm"
+  ],
+  "author": {
+    "name": "fis-team"
+  },
+  "license": "BSD"
+}
