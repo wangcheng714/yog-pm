@@ -7,6 +7,14 @@ fis-pm
 
 ## 使用
 
-* fis-pm monit start //监控pm2的子进程内存状况，放置内存泄漏
-* fis-pm monit stop //停止pm2子进程内存监控
-* fis-pm monit restart //重启pm2子进程内存监控
+```bash
+$ fis-pm monit start #检查pm2的子进程内存状况，防止内存泄漏
+$ fis-pm monit start -s 250 #超过250M的子进程，进行热重启
+$ fis-pm startOrReload pm2-pro.json #利用pm2-pro.json文件启动引用
+
+    pm2-pro.json 设置pm2的bin位置
+    [{
+        "name" : "pm_app",
+        "pm_bin" : "/home/users/***/pm2/bin" //设置pm2的bin目录
+    }]
+
