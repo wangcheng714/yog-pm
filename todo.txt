@@ -1,0 +1,1 @@
+1. 采用日志bunyan : https://github.com/trentm/node-bunyan替换内部各种console.log

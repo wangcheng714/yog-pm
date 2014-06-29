@@ -9,6 +9,7 @@ Object.defineProperty(global, 'fispm', {
 });
 
 fispm.util = require("./lib/util.js");
+fispm.pm2 = require("./lib/pm2.js");
 
 fispm.cli = {};
 fispm.cli.name = "fis-pm";

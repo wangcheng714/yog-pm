@@ -1,11 +1,12 @@
 {
   "name": "fis-pm",
-  "version": "0.0.8",
+  "version": "0.0.12",
   "description": "fis-pm",
   "main": "fis-pm.js",
   "dependencies": {
     "commander" : "2.0.0",
-    "pm2-interface" : "0.1.3"
+    "pm2-interface" : "0.1.3",
+    "q" : "1.0.1"
   },
   "bin": {
     "fis-pm": "bin/fis-pm"
@@ -16,7 +17,8 @@
   },
   "keywords": [
     "fis",
-    "fis-pm"
+    "fis-pm",
+    "node"
   ],
   "author": {
     "name": "fis-team"
