@@ -1,7 +1,7 @@
 [
 	{
 		"name" : "yd-node",
-		"script" : "server.js",
+		"script" : "/home/users/wangcheng/wenku-node/base/server.js",
 		"exec_mode" : "cluster_mode",
 		"instances" : "max",
 		"bin" : "/home/users/wangcheng/wenku-node/base/node_modules/.bin",

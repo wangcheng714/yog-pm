@@ -8,13 +8,9 @@ app_name="yd-node"
 count=`ps ux | grep -c -w "pm2: Daemon"`
 if [ $count -gt 1 ]; then
 	app_count=`ps ux | grep -c -w "pm2: $app_name"`
-	if [ $app_count -gt 1 ]; then
-		pm2 reload $app_name
-	else
-		pm2 kill
-		pm2 start $conf_file
+	if [ $app_count -le 1 ]; then
+		/home/users/wangcheng/.jumbo/bin/node /home/users/wangcheng/wenku-node/base/node_modules/.bin/pm2 start $conf_file
 	fi
 else
-	pm2 kill
-	pm2 start $conf_file
+	/home/users/wangcheng/.jumbo/bin/node /home/users/wangcheng/wenku-node/base/node_modules/.bin/pm2 start $conf_file
 fi
