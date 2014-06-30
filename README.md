@@ -13,6 +13,8 @@ $ fis-pm memwatch -s 250 #对于超过250M的子进程，进行热重启
 $ fis-pm startOrReload /home/wangcheng/demo/pm2-pro.json #利用pm2-pro.json文件启动引用
 $ fis-pm daemon /home/wangcheng/demo/pm2-pro.json #pm2的守护进程，pm2自带的upstart功能需要root权限，通常无法使用
 
+### 目录指定
+
 pm2配置文件
 
     pm2-pro.json 设置pm2的bin位置
@@ -22,3 +24,7 @@ pm2配置文件
         "node_bin" : "/home/users/***/node/bin" //设置pm2的bin目录
     }]
 
+### 配合crontab命令
+
+    * * * * * /home/users/wangcheng/.jumbo/bin/node /home/users/wangcheng/wenku-node/base/node_modules/.bin/fis-pm daemon /home/users/wangcheng/wenku-node/base/pm2-pro.json
+    * * * * * /home/users/wangcheng/.jumbo/bin/node /home/users/wangcheng/wenku-node/base/node_modules/.bin/fis-pm memwatch -s 52
