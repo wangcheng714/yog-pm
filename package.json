@@ -1,6 +1,6 @@
 {
   "name": "fis-pm",
-  "version": "0.0.13",
+  "version": "0.0.15",
   "description": "fis-pm",
   "main": "fis-pm.js",
   "dependencies": {
