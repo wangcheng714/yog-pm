@@ -24,6 +24,8 @@ fispm.cli.version = function(){
     console.log(fispm.cli.info.version);   
 }
 
+
+//this is a strider auto ci test
 fispm.cli.run = function(argv){
     var first = argv[2];
 
