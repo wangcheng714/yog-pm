@@ -28,3 +28,7 @@ pm2配置文件
 
     * * * * * /home/users/wangcheng/.jumbo/bin/node /home/users/wangcheng/wenku-node/base/node_modules/.bin/fis-pm daemon /home/users/wangcheng/wenku-node/base/pm2-pro.json
     * * * * * /home/users/wangcheng/.jumbo/bin/node /home/users/wangcheng/wenku-node/base/node_modules/.bin/fis-pm memwatch -s 52
+    
+####
+
+测试修改
