@@ -1,0 +1,3 @@
+
+pm2-api : 采用pm2 api实现
+promise : 采用promise方案

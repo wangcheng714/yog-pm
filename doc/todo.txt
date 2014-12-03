@@ -1,37 +1,5 @@
+6. pm2 原生命令的提供
 
-2. 换个名字，不再使用fis-pm
+    对于非扩展命令直接命令行执行pm2
 
-    改名为strong-pm2 ： strong-pm2、spm2
-
-7. Log日志增加
-
-    运行时日志 ：
-        子进程重启日志、
-        守护进程检测daemon日志、
-        日志目录可配置
-    程序log ：
-        错误、debug等log
-            bunyan
-            WError
-
-8. ocean错误情况解决
-
-————————————————————————————————————————————————————————————————————————
-
-5. 卡住后自动关闭
-
-1. pm2全局安装解决方案
-
-    是否可以解决 ： 代码or文档
-
-
-_________________________________________________________________________________
-
-10. 尝试使用pm2-interface内置start功能
-
-4. 是否需要增加crontab功能
-
-参考内容 ：
-
-    https://github.com/search?q=pm2&type=Repositories&ref=searchresults
-    https://github.com/ckken/pm2Manage
+1. 是否需要内置管理界面

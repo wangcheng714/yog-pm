@@ -1,16 +1,21 @@
 #!/bin/env bash
-# set path
-export PATH=/home/users/wangcheng/wenku-node/base/node_modules/.bin:$PATH
-#set app conf
-conf_file="/home/users/wangcheng/wenku-node/base/pm2-pro.json"
-# set app name
-app_name="yd-node"
-count=`ps ux | grep -c -w "pm2: Daemon"`
-if [ $count -gt 1 ]; then
-	app_count=`ps ux | grep -c -w "pm2: $app_name"`
-	if [ $app_count -le 1 ]; then
-		/home/users/wangcheng/.jumbo/bin/node /home/users/wangcheng/wenku-node/base/node_modules/.bin/pm2 start $conf_file
-	fi
+
+json=/home/work/repos/pm-demo/pm_demo.json
+node_bin=/home/work/node/bin
+yogPm_bin=/home/work/repos/pm-demo/node_modules/yog-pm/bin/yog-pm
+
+result=`$node_bin $yogPm_bin daemon $json`
+
+succ=`echo $result | grep -c -w "everything is ok"`
+if [ $succ -gt 0 ]; then
+    echo 0
 else
-	/home/users/wangcheng/.jumbo/bin/node /home/users/wangcheng/wenku-node/base/node_modules/.bin/pm2 start $conf_file
+    die=`echo $result | grep -c -e "exec error" -e "not exist"` 
+    if [ $die -gt 0 ]; then
+        echo -1;
+    fi
 fi
+
+
+
+
